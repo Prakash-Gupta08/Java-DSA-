@@ -36,7 +36,22 @@ public class DataTypes {
         System.out.println(toVote);
 
         char fitstCharacter = 'a';
-        System.out.println("My first character is : " + fitstCharacter);
+        System.out.println("My first character is : " + (fitstCharacter+2));
+
+        //Implicit conversion (small data type stored in big datatype)
+        long newNum  = num1;
+        System.out.println(newNum);
+
+        //Explicit conversion(big datatype store in the small datatype)
+        long value1 = 123456789;
+        int value2 = (int)value1;
+        System.out.println(value2);
+
+        /* This give error because number is out of range of the int
+        long value1 = 12345678999;
+        int value2 = (int)value1;
+        System.out.println(value2);
+        */
 
     }
 }
