@@ -1,5 +1,5 @@
 public class PatternPrinting {
-    public static void main(){
+    public static void main() {
 
 //        int n =7;
 //       for(int i=1; i<=n; i++) {
@@ -11,8 +11,6 @@ public class PatternPrinting {
 //               System.out.println();
 //           }
 //       }
-
-
 
 
         //Solid square pattern
@@ -46,7 +44,7 @@ public class PatternPrinting {
 //        }
 
 
-       //Reverse Right-angle triangle
+        //Reverse Right-angle triangle
 //        for(int i=5; i>=1; i--){
 //            for(int j=1; j<=i; j++){
 //                System.out.print("*");
@@ -126,28 +124,34 @@ public class PatternPrinting {
 //            }
 //            System.out.println();
 //        }
-        int m = 5;
-        for(int i=1; i<=m; i++) {
-            for (int j=1; j <= m; j++) {
-                if (j == 1) {
-                    System.out.print("*");
-                } else {
-                    if (i == m|| j==i) {
-                        System.out.print("*");
-                    } else {
-                        System.out.print(" ");
-                    }
-                }
+//        int m = 10;
+//        for(int i=1; i<=m; i++) {
+//            if(i==1 || i==2 || i==m){
+//                for(int j=1; j<=i; j++){
+//                    System.out.print("*");
+//                }
+//            }
+//            else {
+//                System.out.print("*");
+//                for(int j=1; j<=(i-2); j++){
+//                    System.out.print(" ");
+//                }
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//
+//        }
+
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
             }
             System.out.println();
         }
     }
 }
-/*
-*
-**
-* *
-*  *
-*****
 
-*/
